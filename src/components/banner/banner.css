@@ -1,0 +1,27 @@
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner-controls {
+    position: absolute;
+    padding: 2em;
+    width: calc(100% - 4em);
+}
+
+.banner-control {
+    background: #282828;
+    border-radius: 4px;
+    border: 0;
+    padding: 8px 13px 5px 13px;
+    cursor: pointer;
+}
+
+.banner-control-right {
+    float: right;
+}

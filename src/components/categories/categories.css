@@ -1,0 +1,8 @@
+.categories {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 45px 0;
+}

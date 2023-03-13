@@ -1,0 +1,7 @@
+.news {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 80px;
+}

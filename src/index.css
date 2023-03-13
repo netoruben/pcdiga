@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 html {
-  background-color: #fff;
+  background: #F6F6F6;
 }
 
 body {
-  margin: auto;
+  margin: 0;
   font-family: 'Lato';
-  max-width: 1386px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -1,0 +1,19 @@
+.categorie {
+    text-align: center;
+    width: min-content;
+}
+
+.categorie-name {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.224px;
+    color: #1D1D1F;
+    font-family: 'Lato';
+    background: transparent;
+    border: 0;
+    margin-top: 20px;
+}
+
+.categorie-name-selected {
+    text-decoration: underline;
+}

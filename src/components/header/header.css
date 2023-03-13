@@ -1,9 +1,15 @@
+.header {
+    background: #fff;
+}
+
 header {
     height: 85px;
     width: 100%;
     display: flex;
     align-items: center;
     gap: 15px;
+    max-width: 1386px;
+    margin: auto;
 }
 
 .header-left{
@@ -11,7 +17,6 @@ header {
     height: 100%;
     align-items: center;
     gap: 15px;
-    flex: 1;
 }
 
 .header-search {
@@ -51,7 +56,6 @@ header {
     align-items: center;
     justify-content: flex-end;
     gap: 15px;
-    flex: 1;
 }
 
 .header-switch {
