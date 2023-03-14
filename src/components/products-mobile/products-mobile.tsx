@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import Product from '../common/product/product';
-import ProductsData from '../../data/products';
-import './products.css';
+import ProductsData from '../../data/categories-mobile';
 import Categories from '../categories/categories';
 
-function Products() {
+function ProductsMobile() {
   const [selectedCategorie, setCategorie] = useState('Todos')
   const [products, setProducts] = useState<JSX.Element[]>([])
 
@@ -12,11 +11,11 @@ function Products() {
     setProducts([])
     const currentProducts: JSX.Element[] = []
     ProductsData.forEach((product) => {
-      if (!product.type && product.categorie === selectedCategorie) {
-        currentProducts.push(<Product image={product.image} name={product.name} colorsData={product.colors}/>)
+      if (product.categorie === selectedCategorie) {
+        currentProducts.push(<Product from={product.fromPrice} image={product.image} name={product.name}/>)
       }
-      if (!product.type && selectedCategorie === 'Todos') {
-        currentProducts.push(<Product image={product.image} name={product.name} colorsData={product.colors}/>)
+      if (selectedCategorie === 'Todos') {
+        currentProducts.push(<Product from={product.fromPrice} image={product.image} name={product.name}/>)
       }
     })
     setProducts(currentProducts)
@@ -32,4 +31,4 @@ function Products() {
   );
 }
 
-export default Products;
+export default ProductsMobile;

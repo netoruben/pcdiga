@@ -2,10 +2,33 @@
     position: relative;
     display: flex;
     align-items: center;
+    height: 262px;
+    max-width: 1386px;
+    margin: auto;
+}
+.banner-item {
+    width: 100%;
+    visibility: hidden;
+    transition-property: left;
+    transition-duration: 500ms;
+    left: 1400px;
+    position: absolute;
+    top: 0;
+    height: 262px;
+    object-fit: cover;
 }
 
-.banner img {
+.banner-current {
+    visibility: visible;
+    position: relative;
+    left: 0;
+}
+
+.banner-draggable {
+    position: absolute;
     width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 .banner-controls {
@@ -20,6 +43,8 @@
     border: 0;
     padding: 8px 13px 5px 13px;
     cursor: pointer;
+    position: relative;
+    z-index: 2;
 }
 
 .banner-control-right {

@@ -28,7 +28,7 @@ const Categories = [
         image: "/images/categories/apple-tv-4k.png"
     },
     {
-        name: "Acessories",
+        name: "Accessories",
         image: "/images/categories/acessories.png"
     }
 ]

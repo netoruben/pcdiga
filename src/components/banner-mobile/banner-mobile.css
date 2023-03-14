@@ -1,0 +1,8 @@
+.banner-mobile .banner-item {
+    height: 220px;
+    object-fit: fill;
+}
+
+.banner-mobile {
+    height: 220px;
+}

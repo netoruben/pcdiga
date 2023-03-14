@@ -1,8 +1,28 @@
-.categories {
+.categories-items {
     position: relative;
     display: flex;
-    width: 100%;
     justify-content: center;
+}
+
+.categories-movable {
+    left: 0px;
+    position: relative;
+    display: flex;
     align-items: flex-end;
     padding: 45px 0;
+}
+
+.categories-draggable {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: grabbing;
+    top: 0;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1320px) {
+    .categories-items {
+        justify-content: flex-start;
+    }
 }

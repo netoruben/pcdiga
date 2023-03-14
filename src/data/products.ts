@@ -2,6 +2,7 @@ const Products = [
     {
         name: "iPhone 14 Pro",
         image: "/images/products/iphone-14-pro.png",
+        categorie: "iPhone",
         colors: [
             {
                 hex: "#5E746D"
@@ -23,6 +24,7 @@ const Products = [
     {
         name: "iPad Mini",
         image: "/images/products/ipad-mini.png",
+        categorie: "iPad",
         colors: [
             {
                 hex: "#5E746D"
@@ -44,6 +46,7 @@ const Products = [
     {
         name: "AirPods Max",
         image: "/images/products/airpods-max.png",
+        categorie: "AirPods",
         colors: [
             {
                 hex: "#5E746D"
@@ -65,6 +68,7 @@ const Products = [
     {
         name: "iPhone 13",
         image: "/images/products/iphone-13.png",
+        categorie: "iPhone",
         colors: [
             {
                 hex: "#5E746D"
@@ -86,6 +90,7 @@ const Products = [
     {
         name: "Apple Watch Ultra",
         image: "/images/products/apple-watch-ultra.png",
+        categorie: "Apple Watch",
         colors: [
             {
                 hex: "#EDEDED"
@@ -100,11 +105,13 @@ const Products = [
     },
     {
         name: "AirPods Pro",
-        image: "/images/products/airpods-pro.png"
+        image: "/images/products/airpods-pro.png",
+        categorie: "AirPods"
     },
     {
         name: "iPad Pro",
         image: "/images/products/ipad-pro.png",
+        categorie: "iPad",
         colors: [
             {
                 hex: "#5E746D"
@@ -126,6 +133,7 @@ const Products = [
     {
         name: "Macbook Air",
         image: "/images/products/macbook-air.png",
+        categorie: "Mac",
         colors: [
             {
                 hex: "#EDEDED"

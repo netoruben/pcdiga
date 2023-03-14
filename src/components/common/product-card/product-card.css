@@ -47,6 +47,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: pre-wrap;
+    z-index: 2;
+    position: relative;
 }
 
 .product-card-desc {
@@ -121,4 +123,6 @@
     display: flex;
     gap: 8px;
     margin-top: 5px;
+    z-index: 2;
+    position: relative;
 }

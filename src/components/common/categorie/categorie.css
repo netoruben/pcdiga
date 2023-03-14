@@ -12,6 +12,12 @@
     background: transparent;
     border: 0;
     margin-top: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.categorie-name:hover {
+    text-decoration: underline;
 }
 
 .categorie-name-selected {

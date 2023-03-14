@@ -3,7 +3,7 @@ import './button-default.css';
 
 const ButtonDefault: FunctionComponent<PropsWithChildren> = ({children}) => {
   return (
-    <button>{children}</button>
+    <button className='button-default'>{children}</button>
   );
 }
 

@@ -1,14 +1,55 @@
 import React from 'react';
+import ButtonDefault from '../common/button-default/button-default';
 import Logo from '../common/logo/logo';
-import SmallTextLink from '../common/small-text-link/small-text-link';
-import SmallText from '../common/small-text/small-text';
-import './header.css';
+import './header-mobile.css';
 
-function Header() {
+function HeaderMobile() {
   return (
-    <section className='header'>
+    <section className='header-mobile'>
         <header>
-            <div className='header-left'>
+            <div className='header-mobile-first'>
+                <Logo/>
+                <div className='header-switch'>
+                    <div className='header-switch-ball'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path d="M6.33463 0.333415L7.66797 0.333415L7.66797 2.33341L6.33463 2.33341L6.33463 0.333415ZM2.75863 1.81475L4.17263 3.22875L3.22997 4.17141L1.8153 2.75675L2.7573 1.81475L2.75863 1.81475ZM11.244 1.81475L12.1873 2.75741L10.774 4.17208L9.83064 3.22941L11.244 1.81542L11.244 1.81475ZM7.0013 3.66208C8.84465 3.66282 10.3385 5.15762 10.338 7.00097C10.3375 8.84432 8.84288 10.3383 6.99952 10.3381C5.15617 10.3378 3.66197 8.84343 3.66197 7.00008C3.66381 5.1568 5.15802 3.66318 7.0013 3.66208ZM7.0013 9.00475C8.10827 9.00401 9.00513 8.10617 9.00463 6.99919C9.00414 5.89222 8.1065 4.99517 6.99952 4.99542C5.89255 4.99566 4.9953 5.89311 4.9953 7.00008C4.9964 8.10729 5.89409 9.00438 7.0013 9.00475ZM0.334634 6.33341L2.33463 6.33341L2.33463 7.66675L0.334633 7.66675L0.334634 6.33341ZM11.668 6.33341L13.668 6.33342L13.668 7.66675L11.668 7.66675L11.668 6.33341ZM3.23063 9.82808L4.17263 10.7714L2.75863 12.1861L1.8153 11.2427L3.22997 9.82875L3.23063 9.82808ZM10.7726 9.82808L12.186 11.2421L11.2426 12.1847L9.8293 10.7701L10.772 9.82875L10.7726 9.82808ZM6.33463 11.6667L7.66797 11.6667L7.66797 13.6667L6.33463 13.6667L6.33463 11.6667Z" fill="#FFAD00"/>
+                        </svg>
+                    </div>
+                </div>
+                <ButtonDefault>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 19 22" fill="none">
+                        <path d="M3.83505 6.39941C3.83505 3.39637 6.277 0.961914 9.2893 0.961914C12.3016 0.961914 14.7436 3.39637 14.7436 6.39941C14.7436 9.40246 12.3016 11.8369 9.2893 11.8369C6.277 11.8369 3.83505 9.40246 3.83505 6.39941ZM9.2893 9.66191C11.0967 9.66191 12.5619 8.20124 12.5619 6.39941C12.5619 4.59759 11.0967 3.13691 9.2893 3.13691C7.48192 3.13691 6.01675 4.59759 6.01675 6.39941C6.01675 8.20124 7.48192 9.66191 9.2893 9.66191Z" fill="white"/>
+                        <path d="M3.11852 15.4726C1.48193 17.1042 0.5625 19.317 0.5625 21.6244H2.7442C2.7442 19.8939 3.43377 18.2342 4.66122 17.0105C5.88866 15.7869 7.55343 15.0994 9.2893 15.0994C11.0252 15.0994 12.6899 15.7869 13.9174 17.0105C15.1448 18.2342 15.8344 19.8939 15.8344 21.6244H18.0161C18.0161 19.317 17.0967 17.1042 15.4601 15.4726C13.8235 13.841 11.6038 12.9244 9.2893 12.9244C6.97481 12.9244 4.75511 13.841 3.11852 15.4726Z" fill="white"/>
+                    </svg>
+                </ButtonDefault>
+                <ButtonDefault>
+                    <div className='cart'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" fill='none'>
+                            <path d="M0.667969 1.32568H5.01797L5.6872 5.67568M5.6872 5.67568L7.19297 15.4632H18.068L19.6992 5.67568H5.6872Z" stroke="white" strokeWidth="2.175"/>
+                        </svg>
+                        <div className='cart-wheels'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="4" viewBox="0 0 5 4" fill="none">
+                                <circle cx="2.52187" cy="2.35684" r="1.63125" fill="white"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="4" viewBox="0 0 5 4" fill="none">
+                                <circle cx="2.52187" cy="2.35684" r="1.63125" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </ButtonDefault>
+                <ButtonDefault>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
+                        <path d="M0.760937 13.9502H10.5484V11.7002H0.760937V13.9502ZM0.760937 8.3252H20.3359V6.0752H0.760937V8.3252ZM0.760937 2.7002H20.3359V0.450195H0.760937V2.7002Z" fill="white"/>
+                    </svg>
+                </ButtonDefault>
+            </div>
+            <div className='header-search'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                    <path d="M16.5287 18.3072L10.371 12.0079C7.63167 13.9998 3.85704 13.5126 1.68748 10.887C-0.482085 8.26153 -0.32278 4.37361 2.05395 1.94297C4.43006 -0.488747 8.23167 -0.652389 10.7991 1.56652C13.3666 3.78544 13.8432 7.64652 11.8956 10.4485L18.0533 16.7478L16.5298 18.3061L16.5287 18.3072ZM6.62459 2.20964C4.58138 2.20917 2.81863 3.67612 2.40357 5.72234C1.98851 7.76857 3.03522 9.83167 4.90999 10.6626C6.78475 11.4935 8.9723 10.8638 10.1482 9.15478C11.3241 7.44575 11.1651 5.12711 9.76758 3.60264L10.4195 4.26386L9.68462 3.51447L9.67169 3.50125C8.86551 2.67161 7.76822 2.20649 6.62459 2.20964Z" fill="#BABABA"/>
+                </svg>
+                <input placeholder='Escreva aqui o que procura'/>
+            </div>
+            {/* <div className='header-left'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
                     <path d="M0.760937 13.9502H10.5484V11.7002H0.760937V13.9502ZM0.760937 8.3252H20.3359V6.0752H0.760937V8.3252ZM0.760937 2.7002H20.3359V0.450195H0.760937V2.7002Z" fill="#2E3A59"/>
                 </svg>
@@ -65,10 +106,10 @@ function Header() {
                         </svg>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </header>
     </section>
   );
 }
 
-export default Header;
+export default HeaderMobile;

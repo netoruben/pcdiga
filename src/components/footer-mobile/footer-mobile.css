@@ -1,0 +1,82 @@
+.footer-mobile {
+    background: #fff;
+    margin-top: 200px;
+}
+
+.footer-mobile footer {
+    width: 100%;
+    padding: 0px 20px 20px 20px;
+}
+
+.footer-mobile .footer-newsletter {
+    position: relative;
+    width: calc(100% - 40px);
+    top: unset;
+}
+
+.footer-mobile .footer-newsletter-inner {
+    border-radius: 0;
+    width: calc(100% - 40px);
+    display: block;
+}
+
+.footer-mobile .footer-newsletter-input {
+    width: calc(100% - 25px);
+    margin-left: 0;
+}
+
+.footer-mobile .footer-first {
+    margin-top: 25px;
+}
+
+.footer-mobile .footer-trustpilot {
+    float: unset;
+    text-align: center;
+}
+
+.footer-mobile .footer-trustpilot svg {
+    float: unset;
+    text-align: center;
+}
+
+.footer-mobile .footer-trustpilot-firststar {
+    margin-left: 30px;
+}
+
+.footer-mobile .footer-first, .footer-mobile .footer-second {
+    width: calc(100% - 40px);
+}
+
+.footer-mobile .footer-second {
+    margin-top: 15px;
+}
+
+.footer-mobile .footer-third {
+    text-align: center;
+    width: calc(100% - 40px);
+    margin-top: 42px;
+}
+
+.footer-mobile img {
+    margin-top: 25px;
+}
+
+.footer-mobile .footer-copyright {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.footer-mobile .footer-disclaimer {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.footer-mobile .accordion:nth-child(1), .footer-mobile .accordion:nth-child(2) {
+    border-bottom: 0;
+}
+
+.footer-mobile .footer-newsletter-input-relative {
+    margin-top: 18px;
+}
