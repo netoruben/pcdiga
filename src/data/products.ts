@@ -192,7 +192,7 @@ const Products = [
         }
     },
     {
-        name: "Adaptador de corrent Appl USB-C de 20W",
+        name: "Adaptador de corrente Apple USB-C de 20W",
         image: "/images/products/adaptador.png",
         type: 'promocao',
         desc: 'Os novos AirPods recriam a experiência auditiva dos auscultadores sem fios. Reteri-os da caixa e estão prontos a usar.',

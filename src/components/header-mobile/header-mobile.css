@@ -21,10 +21,6 @@
     flex: 1;
 }
 
-.header-mobile-first div:not(.cart) svg path {
-    fill: #fff;
-}
-
 .header-mobile header .header-search {
     width: calc(100% - 40px);
 }
@@ -45,8 +41,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.header-mobile header .header-switch-ball svg path {
-    fill: #FFAD00 !important;
+    right: 18px;
 }

@@ -80,3 +80,7 @@
 .footer-mobile .footer-newsletter-input-relative {
     margin-top: 18px;
 }
+
+.footer-mobile:is(.dark-background) .footer-first div:not(.footer-first-social) svg:nth-child(1) path, .footer-mobile:is(.dark-background) .footer-first div:not(.footer-first-social) svg:nth-child(2) path {
+    fill: #FF7252 !important;
+}

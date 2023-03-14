@@ -12,6 +12,7 @@
     background-color: #F6F6F6;
     left: 1386px;
     z-index: 2;
+    top: -1px;
 }
 
 .carousel-draggable {
@@ -29,6 +30,7 @@
     background-color: #F6F6F6;
     right: 1386px;
     z-index: 2;
+    top: -1px;
 }
 
 .carousel-bar {

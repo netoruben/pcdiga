@@ -26,3 +26,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.dark-background {
+  background: #282828 !important;
+}
+
+.dark-background-secondary {
+  background: #161616 !important;
+  border-color: #161616 !important;
+}
+
+.dark-color {
+  color: #fff !important;
+}

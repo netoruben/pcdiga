@@ -4,7 +4,7 @@
     padding: 8px;
     border-radius: 4px;
     min-width: calc(245px - 8px);
-    grid-template-rows: auto 42px 45px 21px 35px 36px 26px;
+    grid-template-rows: auto 48px 45px 21px 35px 36px 26px;
     position: relative;
 }
 
@@ -33,9 +33,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 4px;
+    border-radius: 8px;
+    background: #fff;
 }
 
 .product-card-name {
+    margin-top: 6px;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;

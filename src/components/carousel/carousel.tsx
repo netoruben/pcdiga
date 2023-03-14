@@ -1,4 +1,4 @@
-import React, {FunctionComponent, useEffect, useRef, useState} from 'react';
+import React, {FunctionComponent, useContext, useEffect, useRef, useState} from 'react';
 import ProductsData from '../../data/products';
 import ProductCard from '../common/product-card/product-card';
 import NewsCard from '../common/news-card/news-card';
@@ -6,6 +6,7 @@ import NewsData from '../../data/news';
 import { useCountdown } from 'react-countdown-circle-timer'
 import './carousel.css';
 import useCarousel from '../../hooks/useCarousel';
+import { DarkContext } from '../../Main';
 
 type Props = {
     title: string
@@ -13,6 +14,7 @@ type Props = {
 }
 
 const Carousel: FunctionComponent<Props> = ({title, type}) => {
+    const { dark } = useContext(DarkContext)
     const carousel = useRef<HTMLDivElement>(null)
     const draggable = useRef<HTMLDivElement>(null)
     const carouselHideRight = useRef<HTMLDivElement>(null)
@@ -72,7 +74,7 @@ const Carousel: FunctionComponent<Props> = ({title, type}) => {
   return (
     <section className='carousel'>
         <div className='carousel-bar'>
-            <p className='carousel-title'>{title}</p>
+            <p className={'carousel-title' + (dark ? ' dark-color' : '')}>{title}</p>
             <button className='carousel-more'>Ver Mais&nbsp;
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="11" viewBox="0 0 20 11" fill="none">
                     <path d="M16.17 6.67193L13.59 9.19656L15 10.571L20 5.69717L15 0.823364L13.59 2.19778L16.17 4.72241H0V6.67193H16.17Z" fill="#FF4D23"/>
@@ -173,8 +175,8 @@ const Carousel: FunctionComponent<Props> = ({title, type}) => {
                 </div>}
                 {products}
             </div>
-            <div ref={carouselHideRight} className='carousel-hide-right'/>
-            <div ref={carouselHideLeft} className='carousel-hide-left'/>
+            <div ref={carouselHideRight} className={'carousel-hide-right' + (dark ? ' dark-background-secondary' : '')}/>
+            <div ref={carouselHideLeft} className={'carousel-hide-left' + (dark ? ' dark-background-secondary' : '')}/>
         </div>
     </section>
   );

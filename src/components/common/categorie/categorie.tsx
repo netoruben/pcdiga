@@ -1,4 +1,5 @@
-import React, {FunctionComponent} from 'react';
+import React, {FunctionComponent, useContext} from 'react';
+import { DarkContext } from '../../../Main';
 import './categorie.css';
 
 type Props = {
@@ -9,6 +10,7 @@ type Props = {
 }
 
 const Categorie: FunctionComponent<Props> = ({selected, image, name,setCategorie}) => {
+  const { dark } = useContext(DarkContext)
 
   const handleClick = (ev: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
       setCategorie(ev.currentTarget.innerText)
@@ -17,7 +19,7 @@ const Categorie: FunctionComponent<Props> = ({selected, image, name,setCategorie
   return (
     <div className='categorie'>
       <img alt={name} src={image}/>
-      <button onClick={(ev) => handleClick(ev)} className={'categorie-name' + (selected ? ' categorie-name-selected' : '')}>{name}</button>
+      <button onClick={(ev) => handleClick(ev)} className={'categorie-name' + (selected ? ' categorie-name-selected' : '') + (dark ? ' dark-color' : '')}>{name}</button>
     </div>
   );
 }
